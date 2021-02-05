@@ -3,7 +3,7 @@ package Lambda;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Persona implements Comparable<Persona> {
+public class Dades implements Comparable<Lambda.Dades> {
 
     private String nompersona;
     private LocalDate naixementpersona;
@@ -11,7 +11,7 @@ public class Persona implements Comparable<Persona> {
 
     public enum Generepersona {DONA,HOME;}
 
-    public Persona(String nompersona, Generepersona generepersona, LocalDate naixementpersona) {
+    public Dades(String nompersona, Generepersona generepersona, LocalDate naixementpersona) {
         this.nompersona = nompersona;
         this.generepersona = generepersona;
         this.naixementpersona = naixementpersona;
@@ -48,7 +48,7 @@ public class Persona implements Comparable<Persona> {
 
 
     @Override
-    public int compareTo(Persona o) {
+    public int compareTo(Lambda.Dades o) {
         if(getAge() > o.getAge()) return -1;
         else if(getAge() < o.getAge()) return 1;
         else return 0;
