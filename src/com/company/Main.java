@@ -1,4 +1,4 @@
-package Lambda;
+package lambda;
 import lambdas.Persona;
 
 import java.time.LocalDate;
